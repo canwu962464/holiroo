@@ -13,8 +13,8 @@ import java.util.Date;
 @DynamicUpdate
 @Data
 public class Wishlist {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String wishId;
 
     private String userId;

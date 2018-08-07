@@ -17,7 +17,6 @@ import java.util.Date;
 public class UserDetail {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String userId;
 
     private String userName;
@@ -28,7 +27,7 @@ public class UserDetail {
 
     private String userBirthday;
 
-    private int userGender;
+    private String userGender;
 
     private String userPhone;
 

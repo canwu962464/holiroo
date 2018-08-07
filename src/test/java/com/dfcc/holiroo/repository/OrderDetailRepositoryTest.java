@@ -1,6 +1,7 @@
 package com.dfcc.holiroo.repository;
 
 import com.dfcc.holiroo.dataObject.OrderDetail;
+import com.dfcc.holiroo.util.KeyGenerateUtil;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,6 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.math.BigDecimal;
+import java.security.Key;
 import java.util.Optional;
 
 
@@ -23,6 +25,7 @@ public class OrderDetailRepositoryTest {
     public void saveTest(){
         OrderDetail orderDetail = new OrderDetail();
 
+        orderDetail.setOrderId(KeyGenerateUtil.genUniqueKey());
         orderDetail.setOrderStart("2018-9-9");
         orderDetail.setOrderEnd("2018-9-20");
         orderDetail.setOrderPrice(new BigDecimal("15"));

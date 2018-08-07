@@ -1,6 +1,7 @@
 package com.dfcc.holiroo.repository;
 
 import com.dfcc.holiroo.dataObject.UserDetail;
+import com.dfcc.holiroo.util.KeyGenerateUtil;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,12 +23,12 @@ public class UserDetailRepositoryTest {
     @org.springframework.transaction.annotation.Transactional
     public void saveTest(){
         UserDetail user = new UserDetail();
-        //user.setUserId(0);
+        user.setUserId(KeyGenerateUtil.genUniqueKey());
         user.setUserName("Jack");
         user.setUserEmail("abcdefg@gmail.com");
         user.setUserPassword("1234");
         user.setUserBirthday("1998-5-9");
-        user.setUserGender(0);
+        user.setUserGender("male");
         user.setUserPhone("0456879772");
         user.setUserAdmin(1);
         user.setUserCredit(new BigDecimal("100"));

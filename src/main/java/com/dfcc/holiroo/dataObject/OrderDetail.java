@@ -16,7 +16,6 @@ import java.util.Date;
 @Data
 public class OrderDetail {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String orderId;
 
     private String orderStart;
