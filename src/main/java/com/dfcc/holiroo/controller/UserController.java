@@ -71,7 +71,7 @@ public class UserController {
         }
     }
 
-    @PostMapping("/search")
+    @PostMapping("/profile")
     public UserDetailVO search(@RequestParam("userId") String userId){
 
         return userService.search(userId);

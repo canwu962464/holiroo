@@ -10,9 +10,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.Optional;
 
-import static org.junit.Assert.*;
-
-
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
 public class RequestRepositoryTest {
@@ -29,6 +26,8 @@ public class RequestRepositoryTest {
         request.setRequestToilet("3-7");
         request.setRequestCarpark("5-6");
         request.setRequestCapacity("6-8");
+        request.setRequestStart("2018-10-9");
+        request.setRequestEnd("2018-10-18");
         request.setRequestDescription("I want a big big house");
         request.setRequestPropertyType("House");
         request.setRequestPrice("1000-1500");

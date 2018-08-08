@@ -39,6 +39,10 @@ public class Request {
 
     private String requestPrice;
 
+    private String requestStart;
+
+    private String requestEnd;
+
     private Date createTime;
 
     private Date updateTime;

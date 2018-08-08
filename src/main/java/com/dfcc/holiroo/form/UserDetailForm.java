@@ -2,6 +2,8 @@ package com.dfcc.holiroo.form;
 
 import lombok.Data;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 
 @Data
@@ -14,6 +16,7 @@ public class UserDetailForm {
     private String userPassword;
 
     @NotEmpty(message = "Email address is necessary.")
+    @Email(message = "Email form is no good.")
     private String userEmail;
 
     @NotEmpty(message = "Birthday is necessary.")
