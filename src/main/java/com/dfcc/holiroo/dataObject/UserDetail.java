@@ -38,6 +38,4 @@ public class UserDetail {
     private Date createTime;
 
     private Date updateTime;
-
-
 }

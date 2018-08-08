@@ -5,9 +5,11 @@ import lombok.Data;
 import javax.validation.constraints.NotEmpty;
 
 @Data
-public class UserDetailForm {
+public class UserUpdateForm {
+    @NotEmpty(message = "User id is necessary")
+    private String userId;
 
-    @NotEmpty(message = "Username is necessary.")
+    @NotEmpty(message = "User name is necessary")
     private String userName;
 
     @NotEmpty(message = "Password is necessary.")

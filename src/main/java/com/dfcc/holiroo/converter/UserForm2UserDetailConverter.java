@@ -2,11 +2,12 @@ package com.dfcc.holiroo.converter;
 
 import com.dfcc.holiroo.dataObject.UserDetail;
 import com.dfcc.holiroo.form.UserDetailForm;
+import com.dfcc.holiroo.form.UserUpdateForm;
 import com.dfcc.holiroo.util.KeyGenerateUtil;
 
 import java.math.BigDecimal;
 
-public class UserDetailForm2UserDetailConverter {
+public class UserForm2UserDetailConverter {
     public static UserDetail convert(UserDetailForm userDetailForm){
         UserDetail userDetail = new UserDetail();
 
@@ -22,4 +23,17 @@ public class UserDetailForm2UserDetailConverter {
 
         return userDetail;
     }
+
+    public static UserDetail convert(UserUpdateForm userUpdateForm, UserDetail userDetail){
+
+        userDetail.setUserName(userUpdateForm.getUserName());
+        userDetail.setUserPhone(userUpdateForm.getUserPhone());
+        userDetail.setUserBirthday(userUpdateForm.getUserBirthday());
+        userDetail.setUserPassword(userUpdateForm.getUserPassword());
+        userDetail.setUserEmail(userUpdateForm.getUserEmail());
+        userDetail.setUserGender(userUpdateForm.getUserGender());
+
+        return userDetail;
+    }
+
 }

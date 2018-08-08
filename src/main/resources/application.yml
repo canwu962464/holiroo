@@ -7,6 +7,7 @@ spring:
   jpa:
     show-sql: true
     database: mysql
+    hibernate.ddl-auto: update
     #database-platform: org.hibernate.dialect.MySQLDialect
   #jackson:
     #default-property-inclusion:
