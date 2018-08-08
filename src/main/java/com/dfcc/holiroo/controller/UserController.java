@@ -73,7 +73,7 @@ public class UserController {
 
     @PostMapping("/search")
     public UserDetailVO search(@RequestParam("userId") String userId){
-        
+
         return userService.search(userId);
     }
 }

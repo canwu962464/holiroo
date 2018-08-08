@@ -15,6 +15,7 @@ import java.util.Date;
 @DynamicUpdate
 @Data
 public class OrderDetail {
+
     @Id
     private String orderId;
 
