@@ -1,11 +1,13 @@
-package com.dfcc.holiroo.VO;
+package com.dfcc.holiroo.DTO;
 
 import lombok.Data;
 
 import java.math.BigDecimal;
 
 @Data
-public class UserDetailVO {
+public class UserDetailDTO {
+
+    private String userId;
 
     private String userName;
 
@@ -16,4 +18,6 @@ public class UserDetailVO {
     private String userGender;
 
     private String userPhone;
+
+    private BigDecimal userCredit;
 }

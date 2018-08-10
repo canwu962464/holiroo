@@ -1,16 +1,18 @@
 package com.dfcc.holiroo.service;
 
-import com.dfcc.holiroo.VO.UserDetailVO;
+import com.dfcc.holiroo.DTO.UserDetailDTO;
+import com.dfcc.holiroo.DTO.UserLogInDTO;
 import com.dfcc.holiroo.dataObject.UserDetail;
-import com.dfcc.holiroo.form.UserDetailForm;
 import com.dfcc.holiroo.form.UserUpdateForm;
 
 public interface UserService {
 
     //user sign up
-    UserDetail signUp(UserDetail userDetail);
+    UserLogInDTO signUp(UserDetail userDetail);
 
-    UserDetail update(UserUpdateForm userUpdateForm);
+    UserLogInDTO update(UserUpdateForm userUpdateForm);
 
-    UserDetailVO search(String userId);
+    UserDetailDTO search(String userId);
+
+    UserLogInDTO logIn(String userEmail, String userPassword);
 }
