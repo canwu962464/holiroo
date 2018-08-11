@@ -57,6 +57,8 @@ public class Property {
 
     private int propertyAutoConfirmed; //0 for auto confirmed, 1 for not auto confirmed
 
+    private String propertyPicture;
+
     private Date createTime;
 
     private Date updateTime;
